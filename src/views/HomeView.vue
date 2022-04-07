@@ -17,5 +17,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+.home {
+  background: linear-gradient(to bottom, $primary-color, transparent),
+    url("@/assets/noise.svg");
+  height: 100%;
+}
 </style>
