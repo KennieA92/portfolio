@@ -1,10 +1,24 @@
-<template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+
+  <template>
+  <div
+    id="toplevel-wrapper"
+    class="container-fluid d-flex min-vh-100 flex-column"
+  >
+    <NavigationComponent />
+    <router-view />
+  </div>
 </template>
+
+
+<script>
+import NavigationComponent from "@/components/NavigationComponent.vue";
+export default {
+  components: {
+    NavigationComponent,
+  },
+  setup() {},
+};
+</script>
 
 <style lang="scss">
 #app {
@@ -14,15 +28,18 @@
   text-align: center;
   color: #2c3e50;
 }
+#toplevel-wrapper {
+  padding: 0; /* Added */
+  box-sizing: border-box;
+}
 
 nav {
-  height: 10vh;
+  min-height: 10vh;
   padding: 30px;
   background-color: $primary-color;
   a {
     font-weight: bold;
     color: $secondary-color;
-
     &.router-link-exact-active {
       color: $tertiary-color;
     }
