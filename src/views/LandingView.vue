@@ -1,31 +1,36 @@
 <template>
   <div class="container-fluid">
     <div class="landing-view row">
-      <div class="section-option col-12 col-sm-12 col-md-6 card text-white">
-        <img class="card-img" src="@/assets/logoSVG.svg" alt="Card image" />
-        <div class="card-img-overlay d-flex flex-column fluid">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </p>
-          <p class="card-text">Last updated 3 mins ago</p>
-        </div>
+      <div class="section-option col-12 col-sm-12 col-md-6 card">
+        <img class="card-img" src="@/assets/logoSVG.svg" alt="Grayscale Logo" />
+
+        <router-link to="/portfolio">
+          <div class="card-img-overlay d-flex flex-column fluid text-white">
+            <h5 class="card-title">Strictly Business</h5>
+            <p class="card-text">
+              A select few of my coding-projects are available on this part of
+              my Portfolio page.
+            </p>
+            <p class="card-text">Click here to continue</p>
+          </div>
+        </router-link>
       </div>
-      <div class="section-option col-12 col-sm-12 col-md-6 card text-white">
+      <div class="section-option col-12 col-sm-12 col-md-6 card">
         <img
           class="card-img"
           src="@/assets/logoColorSVG.svg"
-          alt="Card image"
+          alt="Color Logo"
         />
-        <div class="card-img-overlay d-flex flex-column fluid">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </p>
-          <p class="card-text">Last updated 3 mins ago</p>
-        </div>
+        <router-link to="/passion">
+          <div class="card-img-overlay d-flex flex-column fluid text-white">
+            <h5 class="card-title">Passion &#38; Hobbies</h5>
+            <p class="card-text">
+              A multitude of my passion projects are available on this part of
+              my Portfolio page.
+            </p>
+            <p class="card-text">Click here to continue</p>
+          </div>
+        </router-link>
       </div>
     </div>
   </div>
@@ -38,7 +43,7 @@ export default {};
 <style lang="scss" scoped>
 .landing-view {
   .card {
-    height: 90vh;
+    max-height: 91vh;
     justify-content: center;
     background: linear-gradient(
         to bottom,
@@ -64,7 +69,7 @@ export default {};
       background: #00000000;
       transition: all 1s ease-in;
       &:hover {
-        background-color: #00000080;
+        background-color: #00000090;
         .card-text {
           display: block;
         }

@@ -1,6 +1,14 @@
 <template>
-  <div class="SectionOptions col-12 col-sm-12 col-md-6">
-    <img :src="getImgURL" alt="" />
+  <div class="section-option col-12 col-sm-12 col-md-6 card text-white">
+    <img class="card-img" :src="'@/assets/' + imgURL" alt="Card image" />
+    <div class="card-img-overlay d-flex flex-column fluid">
+      <h5 class="card-title">Strictly Business</h5>
+      <p class="card-text">
+        A select few of my coding-projects are available on this part of my
+        Portfolio page.
+      </p>
+      <p class="card-text">Click here to continue</p>
+    </div>
   </div>
 </template>
 

@@ -34,8 +34,8 @@ export default {
 }
 
 nav {
-  min-height: 10vh;
-  padding: 30px;
+  min-height: 5vh;
+  padding: 15px;
   background-color: $primary-color;
   a {
     font-weight: bold;
