@@ -1,25 +1,26 @@
 <template>
   <div class="portfolio">
-    <!--<div id="clip">
-      KENNIE <br />
-      ANKERSØ
-    </div>
-  -->
     <div class="video-bg">
-      <!-- the below iframe is only used for this demonstration on codepen. Make sure to download the video from pexel.com. 
-Here's the link: https://www.pexels.com/video/school-of-fish-1151329/ -->
-      <!-- Thanks to Tom Fisk for making the video available for free. -->
-      <iframe
-        src="https://www.youtube.com/embed/LXb3EKWsInQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1"
+      <video
+        :src="require('@/assets/fishvideo.mp4')"
+        autoplay
+        loop
+        muted
+        playsinline
         frameborder="0"
         allowfullscreen
         tabindex="-1"
-      ></iframe>
+      ></video>
       <div class="text">
-        <p>
-          Kennie <br />
+        <h1>
+          Kennie
+          <br />
           Ankersø
-        </p>
+        </h1>
+
+        <div class="title-container">
+          <span id="title-span">Full-Stack Developer | Graphical Designer</span>
+        </div>
       </div>
     </div>
   </div>
@@ -33,7 +34,7 @@ export default {};
 .portfolio {
   background: black;
   .video-bg {
-    iframe {
+    video {
       height: 90vh;
       width: 100%;
     }
@@ -41,26 +42,40 @@ export default {};
     .text {
       position: absolute;
       top: 0;
-      font-size: 14vw;
+      h1 {
+        font-size: 13vw;
+
+        font-weight: 900;
+        line-height: 12vw;
+      }
       color: #fff;
       background: #000;
       width: 100vw;
       height: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       font-family: helvetica;
       text-transform: uppercase;
-      font-weight: 900;
-      line-height: 13vw;
-
       mix-blend-mode: multiply;
+
+      .title-container {
+        #title-span {
+          font-size: 2vw;
+          line-height: 5vw;
+        }
+      }
     }
   }
-  #clip {
-    /*
+}
+
+/*
+  -- First Attempt at making the Knockout Text
+#clip {
+    
   Ensure background is added first
-  */
+  
     background: linear-gradient(
         to bottom,
         $primary-color,
@@ -80,6 +95,5 @@ export default {};
     font-size: 18vw;
     font-weight: bold;
     text-align: center;
-  }
-}
+  }*/
 </style>
