@@ -2,6 +2,7 @@
   <div class="home">
     <HeroComponent />
     <ProjectComponent />
+    <AboutComponent />
     <div class="container-fluid">
       <div class="landing-view row">
         <div class="section-option col-12 col-sm-12 col-md-6 card">
@@ -87,12 +88,14 @@
 // @ is an alias to /src
 import HeroComponent from "@/components/HeroComponent.vue";
 import ProjectComponent from "@/components/ProjectComponent.vue";
+import AboutComponent from "@/components/AboutComponent.vue";
 
 export default {
   name: "HomeView",
   components: {
     HeroComponent,
     ProjectComponent,
+    AboutComponent,
   },
 };
 </script>

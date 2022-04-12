@@ -60,7 +60,6 @@ export default {};
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-family: helvetica;
       text-transform: uppercase;
       mix-blend-mode: multiply;
 

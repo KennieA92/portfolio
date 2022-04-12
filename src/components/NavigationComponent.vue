@@ -2,8 +2,8 @@
   <transition name="fade">
     <nav class="sticky col-12" v-if="showNavbar">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/passion">Passion</router-link> |
+      <a href="#about-section">About Me</a> |
+      <a href="#project-section">Projects</a> |
       <router-link to="/portfolio">Portfolio</router-link>
     </nav>
   </transition>
