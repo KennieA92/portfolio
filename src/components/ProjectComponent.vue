@@ -96,13 +96,13 @@ export default {
   }
   .card {
     justify-content: space-between;
-    min-height: 50vh;
+    min-height: 65vh;
     max-height: 100vh;
     border-radius: 0px;
     color: $tertiary-color;
     background: $quaternary-color;
     .card-img-top {
-      max-height: 30vh;
+      max-height: 40vh;
       padding: 2vh 0;
       background-color: $tertiary-color;
       background-image: url("../assets/noise.svg");
