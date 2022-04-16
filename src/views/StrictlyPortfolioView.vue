@@ -51,7 +51,7 @@ export default {};
       color: #fff;
       background: #000;
       width: 100vw;
-      height: 100%;
+      height: 90vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -74,8 +74,6 @@ export default {};
   -- First Attempt at making the Knockout Text
 #clip {
     
-  Ensure background is added first
-  
     background: linear-gradient(
         to bottom,
         $primary-color,

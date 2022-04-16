@@ -27,24 +27,31 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   text-align: center;
-  color: #2c3e50;
-  background: black;
+  background: $primary-color;
+  color: $tertiary-color;
+  #toplevel-wrapper {
+    padding: 0; /* Added */
+    box-sizing: border-box;
+  }
 }
-#toplevel-wrapper {
-  padding: 0; /* Added */
-  box-sizing: border-box;
+/* Scroll bar stylings */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
 }
 
-nav {
-  min-height: 5vh;
-  padding: 15px;
-  background-color: $primary-color;
-  a {
-    font-weight: bold;
-    color: $secondary-color;
-    &.router-link-exact-active {
-      color: $tertiary-color;
-    }
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: $primary-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondary-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $tertiary-color;
 }
 </style>

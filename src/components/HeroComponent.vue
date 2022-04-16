@@ -48,11 +48,10 @@ export default {};
       top: 0;
       h1 {
         font-size: 13vw;
-
         font-weight: 900;
         line-height: 12vw;
       }
-      color: #fff;
+
       background: $primary-color;
       width: 100%;
       height: 100%;

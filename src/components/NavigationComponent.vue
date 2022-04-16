@@ -10,10 +10,11 @@
 </template>
 
 <script>
-import { onUnmounted, onMounted } from "vue";
-import { ref } from "vue";
+import { ref, onUnmounted, onMounted } from "vue";
+import { useRoute } from "vue-router";
 export default {
   setup() {
+    const route = useRoute();
     let showNavbar = ref(false);
     onMounted(() => {
       window.addEventListener("scroll", handleScroll);
@@ -23,7 +24,7 @@ export default {
     });
 
     const handleScroll = () => {
-      window.pageYOffset > 0
+      window.pageYOffset > 0 || route.path !== "/"
         ? (showNavbar.value = true)
         : (showNavbar.value = false);
     };
@@ -33,25 +34,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-nav a {
-  color: $tertiary-color;
-}
+nav {
+  min-height: 5vh;
+  padding: 15px;
+  background-color: $primary-color;
+  a {
+    font-weight: bold;
+    color: $tertiary-color;
+    &:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    &:active {
+      background-color: #4caf50;
+      color: white;
+    }
+  }
 
-nav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-nav a.active {
-  background-color: #4caf50;
-  color: white;
-}
-
-.sticky {
-  background: $secondary-color;
-  position: fixed;
-  top: 0;
-  z-index: 5;
+  &.sticky {
+    background: $secondary-color;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+  }
 }
 .fade-enter-active {
   transition: all 1s;
