@@ -46,41 +46,44 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.row {
-  color: $tertiary-color;
-  h1 {
-    text-transform: uppercase;
-    margin-bottom: 1em;
-  }
-  .card {
-    min-height: 45vh;
-    max-height: 50vh;
-    border-radius: 0px;
+#project-section {
+  padding: 5vh 0;
+  .row {
     color: $tertiary-color;
-    background: $quaternary-color;
-    @media screen and (min-width: 1292px) {
-      &:hover {
-        transform: scale(1.05);
+    h1 {
+      text-transform: uppercase;
+      margin-bottom: 1em;
+    }
+    .card {
+      min-height: 45vh;
+      max-height: 50vh;
+      border-radius: 0px;
+      color: $tertiary-color;
+      background: $quaternary-color;
+      @media screen and (min-width: 1292px) {
+        &:hover {
+          transform: scale(1.05);
+        }
       }
-    }
-    .card-img-top {
-      height: 20vh;
-      padding: 2vh 0;
-      background-color: $tertiary-color;
-      border-radius: 0;
-      background-image: url("../assets/noise.svg");
-    }
-    .card-body {
-      height: 20vh;
-      font-size: 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between !important;
-      .btn {
-        border-radius: 0px;
-        background-color: $secondary-color;
-        color: $tertiary-color;
-        border-color: $quaternary-color;
+      .card-img-top {
+        height: 20vh;
+        padding: 2vh 0;
+        background-color: $tertiary-color;
+        border-radius: 0;
+        background-image: url("../assets/noise.svg");
+      }
+      .card-body {
+        height: 20vh;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between !important;
+        .btn {
+          border-radius: 0px;
+          background-color: $secondary-color;
+          color: $tertiary-color;
+          border-color: $quaternary-color;
+        }
       }
     }
   }
