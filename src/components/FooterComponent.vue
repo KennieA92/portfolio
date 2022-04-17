@@ -4,7 +4,7 @@
       <div class="container py-4">
         <div class="row gy-4 gx-5">
           <div class="col-lg-4 col-md-6">
-            <h5 class="h1 text-white">Kennie Ankersø</h5>
+            <h5 class="h1">Kennie Ankersø</h5>
             <p class="small text-muted">Front-End Developer</p>
             <p class="small text-muted mb-0">
               &copy; Copyrights. All rights reserved.
@@ -12,7 +12,7 @@
             </p>
           </div>
           <div class="col-lg-2 col-md-6">
-            <h5 class="text-white mb-3">Navigation</h5>
+            <h5 class="mb-3">Navigation</h5>
             <ul class="list-unstyled text-muted">
               <li><a href="#">Home</a></li>
               <li><a href="#project-section">Projects</a></li>
@@ -21,7 +21,7 @@
             </ul>
           </div>
           <div class="col-lg-2 col-md-6">
-            <h5 class="text-white mb-3">Contact</h5>
+            <h5 class="mb-3">Contact</h5>
             <ul class="list-unstyled text-muted">
               <li><a href="#">FB</a></li>
               <li><a href="#project-section">LI</a></li>
@@ -31,7 +31,7 @@
           </div>
 
           <div class="col-lg-4 col-md-6">
-            <h5 class="text-white mb-3">Newsletter</h5>
+            <h5 class="mb-3">Newsletter</h5>
             <p class="small text-muted">
               Sign up for our newsletter to get the latest news and updates. No
               spam, we promise!
@@ -68,32 +68,34 @@ export default {};
 <style lang="scss" scoped>
 footer {
   background: $secondary-color;
+  .row {
+    margin: 0;
+    img {
+      width: 20px;
+    }
+    .text-small {
+      font-size: 0.9rem;
+    }
 
-  img {
-    width: 20px;
-  }
-  .text-small {
-    font-size: 0.9rem;
-  }
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
 
-  a {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
-  }
+    a:hover,
+    a:focus {
+      text-decoration: none;
+    }
 
-  a:hover,
-  a:focus {
-    text-decoration: none;
-  }
+    .form-control {
+      background: #212529;
+      border-color: #545454;
+    }
 
-  .form-control {
-    background: #212529;
-    border-color: #545454;
-  }
-
-  .form-control:focus {
-    background: #212529;
+    .form-control:focus {
+      background: #212529;
+    }
   }
 }
 </style>
