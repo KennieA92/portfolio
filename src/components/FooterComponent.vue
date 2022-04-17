@@ -12,7 +12,7 @@
             </p>
           </div>
           <div class="col-lg-2 col-md-6">
-            <h5 class="text-white mb-3">Quick links</h5>
+            <h5 class="text-white mb-3">Navigation</h5>
             <ul class="list-unstyled text-muted">
               <li><a href="#">Home</a></li>
               <li><a href="#project-section">Projects</a></li>
@@ -21,12 +21,12 @@
             </ul>
           </div>
           <div class="col-lg-2 col-md-6">
-            <h5 class="text-white mb-3">Quick links</h5>
+            <h5 class="text-white mb-3">Contact</h5>
             <ul class="list-unstyled text-muted">
-              <li><a href="#">Home</a></li>
-              <li><a href="#project-section">Projects</a></li>
-              <li><a href="#about-section">About</a></li>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="#">FB</a></li>
+              <li><a href="#project-section">LI</a></li>
+              <li><a href="#about-section">INS</a></li>
+              <li><a href="#">MAIL</a></li>
             </ul>
           </div>
 
