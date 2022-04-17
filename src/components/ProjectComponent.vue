@@ -8,7 +8,7 @@
         <div
           v-for="project in projects"
           :key="project"
-          class="col-12 col-sm-6 col-md-4 mb-4"
+          class="col-12 col-sm-6 col-md-3 mb-3"
         >
           <div class="card" style="">
             <img :src="project.projectURL" class="card-img-top" alt="..." />
@@ -53,15 +53,18 @@ export default {
     margin-bottom: 1em;
   }
   .card {
-    height: 75vh;
+    min-height: 45vh;
+    max-height: 50vh;
     border-radius: 0px;
     color: $tertiary-color;
     background: $quaternary-color;
-    &:hover {
-      transform: scale(1.05);
+    @media screen and (min-width: 1292px) {
+      &:hover {
+        transform: scale(1.05);
+      }
     }
     .card-img-top {
-      height: 40vh;
+      height: 20vh;
       padding: 2vh 0;
       background-color: $tertiary-color;
       border-radius: 0;

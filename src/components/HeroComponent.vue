@@ -3,7 +3,7 @@
     <div class="portfolio">
       <div class="video-bg">
         <video
-          :src="require('@/assets/fishvideo.mp4')"
+          :src="require('@/assets/video/fishvideo.mp4')"
           autoplay
           loop
           muted
@@ -54,7 +54,7 @@ export default {};
 
       background: $primary-color;
       width: 100%;
-      height: 100%;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;

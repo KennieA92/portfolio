@@ -3,8 +3,7 @@
     <nav class="sticky col-12" v-if="showNavbar">
       <router-link to="/">Home</router-link> |
       <a href="#about-section">About Me</a> |
-      <a href="#project-section">Projects</a> |
-      <router-link to="/portfolio">Portfolio</router-link>
+      <a href="#project-section">Projects</a>
     </nav>
   </transition>
 </template>
