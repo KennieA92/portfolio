@@ -3,15 +3,15 @@
     <footer class="w-100 py-4 flex-shrink-0">
       <div class="container py-4">
         <div class="row gy-4 gx-5">
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-6 col-md-6">
             <h5 class="h1">Kennie Ankersø</h5>
             <p class="small text-muted">Front-End Developer</p>
             <p class="small text-muted mb-0">
               &copy; Copyrights. All rights reserved.
-              <a class="text-primary" href="#">Kennie Ankersø</a>
+              <span id="copyright-kennie">Kennie Ankersø</span>
             </p>
           </div>
-          <div class="col-lg-2 col-md-6">
+          <div class="col-lg-3 col-md-6">
             <h5 class="mb-3">Navigation</h5>
             <ul class="list-unstyled text-muted">
               <li><a href="#">Home</a></li>
@@ -20,40 +20,26 @@
               <li><a href="#">FAQ</a></li>
             </ul>
           </div>
-          <div class="col-lg-2 col-md-6">
+          <div class="col-lg-3 col-md-6">
             <h5 class="mb-3">Contact</h5>
             <ul class="list-unstyled text-muted">
-              <li><a href="#">FB</a></li>
-              <li><a href="#project-section">LI</a></li>
-              <li><a href="#about-section">INS</a></li>
-              <li><a href="#">MAIL</a></li>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#project-section">
+                  <i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#about-section">
+                  <i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-at"></i></a>
+              </li>
             </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <h5 class="mb-3">Newsletter</h5>
-            <p class="small text-muted">
-              Sign up for our newsletter to get the latest news and updates. No
-              spam, we promise!
-            </p>
-            <form action="#">
-              <div class="input-group mb-3">
-                <input
-                  class="form-control"
-                  type="text"
-                  placeholder="Email address"
-                  aria-label="Recipient's username"
-                  aria-describedby="button-addon2"
-                />
-                <button
-                  class="btn btn-primary"
-                  id="button-addon2"
-                  type="button"
-                >
-                  <img src="../assets/img/send.png" />
-                </button>
-              </div>
-            </form>
           </div>
         </div>
       </div>
@@ -67,7 +53,8 @@ export default {};
 
 <style lang="scss" scoped>
 footer {
-  background: $secondary-color;
+  border-top: solid 2px darken($primary-color, 10%);
+  background: $primary-color;
   .row {
     margin: 0;
     img {
@@ -75,10 +62,13 @@ footer {
     }
     .text-small {
       font-size: 0.9rem;
+      color: $text-color;
     }
-
+    #copyright-kennie {
+      color: $quaternary-color;
+    }
     a {
-      color: inherit;
+      color: $quaternary-color;
       text-decoration: none;
       transition: all 0.3s;
     }
@@ -86,15 +76,6 @@ footer {
     a:hover,
     a:focus {
       text-decoration: none;
-    }
-
-    .form-control {
-      background: #212529;
-      border-color: #545454;
-    }
-
-    .form-control:focus {
-      background: #212529;
     }
   }
 }

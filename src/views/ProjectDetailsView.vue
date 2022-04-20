@@ -47,11 +47,9 @@ export default {
     height: 70vh;
     border-radius: 0px;
     color: $tertiary-color;
-    background: $quaternary-color;
     &:hover {
       .card-body {
         background: $primary-color;
-        color: $quaternary-color;
       }
     }
   }

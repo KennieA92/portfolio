@@ -18,25 +18,15 @@ export default {};
 <style lang="scss" scoped>
 #about-section {
   padding-top: 10vh;
-  video {
-    height: 80vh;
-    width: 100%;
+  margin-bottom: 1em;
+  h1 {
+    color: $tertiary-color;
+    text-transform: uppercase;
+    margin-bottom: 1em;
   }
-
-  .text {
-    position: absolute;
-    top: 0;
-    h1 {
-      font-size: 13vw;
-      font-weight: 900;
-      line-height: 12vw;
-    }
-
-    background: $primary-color;
+  video {
+    max-height: 80vh;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
   }
 }
 </style>

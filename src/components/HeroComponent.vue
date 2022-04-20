@@ -1,29 +1,20 @@
 <template>
   <section id="hero-section">
-    <div class="portfolio">
-      <div class="video-bg">
-        <video
-          :src="require('@/assets/video/fishvideo.mp4')"
-          autoplay
-          loop
-          muted
-          playsinline
-          frameborder="0"
-          allowfullscreen
-          tabindex="-1"
-        ></video>
-        <div class="text">
-          <h1>
-            Kennie
-            <br />
-            Ankersø
-          </h1>
+    <div class="container d-flex min-vh-100 align-items-center">
+      <div class="introduction-text">
+        <h1>
+          Hi, I am <span>Kennie</span> and I am a
+          <span>Multimedia Designer</span>, <span>Web-Developer</span> &#38;
+          <span>Software Developer</span>. <br />I have a passion for
+          <span>creating</span> and <span>designing</span>.
+        </h1>
 
-          <div class="title-container">
-            <span id="title-span"
-              >Full-Stack Developer | Graphical Designer</span
-            >
-          </div>
+        <div class="title-container">
+          <span id="title-span">
+            <a href="#">Multimedia Designer </a>|
+            <a href="#">Full-Stack Developer </a>|
+            <a href="#">Pizza Enthusiast</a>
+          </span>
         </div>
       </div>
     </div>
@@ -35,66 +26,31 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-.portfolio {
-  .video-bg {
-    video {
-      height: 100vh;
-      width: 100%;
-    }
-
-    .text {
-      position: absolute;
-      top: 0;
-      h1 {
-        font-size: 13vw;
-        font-weight: 900;
-        line-height: 12vw;
+#hero-section {
+  .introduction-text {
+    text-align: left;
+    h1 {
+      color: $secondary-color;
+      span {
+        color: $tertiary-color;
       }
-
-      background: $primary-color;
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-transform: uppercase;
-      mix-blend-mode: multiply;
-
-      .title-container {
-        #title-span {
-          font-size: 2vw;
-          line-height: 5vw;
+    }
+    .title-container {
+      #title-span {
+        color: $secondary-color;
+        a {
+          padding-right: 1rem;
+          color: $text-color;
+          text-decoration: none;
+          &:hover {
+            color: $tertiary-color;
+          }
+        }
+        :not(:first-child) {
+          padding-left: 1rem;
         }
       }
     }
   }
 }
-
-/*
-  -- First Attempt at making the Knockout Text
-#clip {
-    
-  Ensure background is added first
-  
-    background: linear-gradient(
-        to bottom,
-        $primary-color,
-        rgba(222, 112, 6, 0.2),
-        $secondary-color
-      ),
-      url("@/assets/color.gif");
-    background-size: cover;
-    background-position: center;
-
-    background-attachment: fixed;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-
-    line-height: 15vw;
-    padding-top: 2vh;
-    font-size: 18vw;
-    font-weight: bold;
-    text-align: center;
-  }*/
 </style>

@@ -22,13 +22,13 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: "League Spartan", Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Orbitron", Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   text-align: center;
   background: $primary-color;
-  color: $tertiary-color;
+  color: $text-color;
   #toplevel-wrapper {
     padding: 0; /* Added */
     box-sizing: border-box;

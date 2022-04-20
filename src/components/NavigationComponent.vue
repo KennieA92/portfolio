@@ -1,11 +1,42 @@
 <template>
-  <transition name="fade">
-    <nav class="sticky col-12" v-if="showNavbar">
-      <router-link to="/">Home</router-link> |
-      <a href="#about-section">About Me</a> |
-      <a href="#project-section">Projects</a>
+  <div class="col-12 d-flex justify-content-center">
+    <nav class="navbar navbar-expand-lg sticky col-12 col-sm-12 col-md-11">
+      <div class="d-flex container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="../assets/logo.svg" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarTogglerDemo02"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <router-link class="nav-link" to="/">Home</router-link>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project-section">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-section">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-  </transition>
+  </div>
 </template>
 
 <script>
@@ -34,25 +65,42 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-  min-height: 5vh;
-  padding: 15px;
-  background-color: $primary-color;
+  min-height: 10vh;
+  padding: 10px;
+  border-bottom: 2px solid darken($primary-color, 10%);
+  .navbar-toggler {
+    border-radius: 0px;
+    border: 2px solid $text-color;
+    .navbar-toggler-icon {
+      text-align: center;
+      i {
+        color: $text-color;
+        font-size: 28px;
+      }
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      padding-left: 2rem;
+      padding-right: 0.5rem;
+    }
+  }
+  .navbar-brand {
+    img {
+      height: 8vh;
+    }
+  }
   a {
     font-weight: bold;
-    color: $tertiary-color;
+    color: $quaternary-color;
     &:hover {
-      background-color: #ddd;
-      color: black;
-    }
-    &:active {
-      background-color: #4caf50;
-      color: white;
+      color: $tertiary-color;
     }
   }
 
   &.sticky {
-    background: $secondary-color;
-    position: fixed;
+    background-color: $primary-color;
     top: 0;
     z-index: 5;
   }

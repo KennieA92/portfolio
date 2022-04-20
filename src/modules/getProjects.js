@@ -40,8 +40,8 @@ function getProjects(id) {
         },
         {
             projectID: 5,
-            projectTitle: "Card Two",
-            projectDescription: "Lorem ipsum, text is very nice. Much wow2",
+            projectTitle: "Terminator Parody",
+            projectDescription: "A Parady of the movie Terminator. Starring a Terminator.(Me)",
             projectURL: require("../assets/img/logo/html.svg"),
         },
 
