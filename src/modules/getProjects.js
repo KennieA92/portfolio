@@ -1,6 +1,6 @@
 import { ref } from 'vue'
 
-export default function getProjects() {
+function getProjects(id) {
 
     let projects = ref([
         {
@@ -46,6 +46,9 @@ export default function getProjects() {
         },
 
     ]);
-    // let project = ref(projects.value.filter(project => project.projectID === id));
-    return { projects }
+
+    let filteredProjectOnId = projects.value.filter(i => i.projectID == id)
+
+    return { projects, filteredProjectOnId }
 }
+export default getProjects

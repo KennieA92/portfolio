@@ -6,7 +6,11 @@
       </div>
       <div class="col-12 col-sm-12 col-md-12">
         <div class="card" style="">
-          <img src="" class="col-sm-12 col-md-8 card-img-top" alt="..." />
+          <img
+            :src="filteredProjectOnId.projectURL"
+            class="col-sm-12 col-md-8 card-img-top"
+            alt="..."
+          />
           <div class="card-body col-sm-12 col-md-4">
             <h5 id="cardOne" class="card-title"></h5>
             <p class="card-text"></p>
@@ -18,18 +22,18 @@
 </template>
 
 <script>
-//import getProjects from "../modules/getProjects";
+import { useRoute } from "vue-router";
+import getProjects from "../modules/getProjects";
+
 export default {
-  name: "ProjectDetailsComponent",
-  props: {
-    imgURL: String,
-    description: String,
-  },
   setup() {
-    // const { project } = getProjects(1);
+    const route = useRoute();
+
+    const { filteredProjectOnId } = getProjects(route.params.id); // 1
 
     return {
-      //project,
+      route,
+      filteredProjectOnId,
     };
   },
 };

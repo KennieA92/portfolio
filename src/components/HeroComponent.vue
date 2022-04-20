@@ -36,7 +36,6 @@ export default {};
 
 <style lang="scss" scoped>
 .portfolio {
-  background: black;
   .video-bg {
     video {
       height: 100vh;
