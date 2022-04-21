@@ -32,6 +32,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#about-section">About</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/CV.pdf" download>Resume</a>
+            </li>
           </ul>
         </div>
       </div>

@@ -17,27 +17,28 @@
               <li><a href="#">Home</a></li>
               <li><a href="#project-section">Projects</a></li>
               <li><a href="#about-section">About</a></li>
-              <li><a href="#">FAQ</a></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6">
             <h5 class="mb-3">Contact</h5>
             <ul class="list-unstyled text-muted">
               <li>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=1328679988"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
               </li>
               <li>
-                <a href="#project-section">
+                <a href="https://www.linkedin.com/in/kennie-ankers%C3%B8/">
                   <i class="fa-brands fa-linkedin-in"></i
                 ></a>
               </li>
               <li>
-                <a href="#about-section">
-                  <i class="fa-brands fa-instagram"></i
-                ></a>
+                <a href=""> <i class="fa-brands fa-instagram"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa-solid fa-at"></i></a>
+                <a href="mailto:KennieAnkerWork@Gmail.com"
+                  ><i class="fa-solid fa-at"></i
+                ></a>
               </li>
             </ul>
           </div>

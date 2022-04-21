@@ -3,19 +3,17 @@
     <div class="container-md">
       <div class="row">
         <div>
-          <h1 id="section-title">Projects</h1>
+          <h1 id="section-title">
+            I have done several <span>projects</span> in my career.
+          </h1>
         </div>
         <div
           v-for="project in projects"
           :key="project"
           class="col-12 col-sm-6 col-md-4 mb-4"
         >
-          <router-link
-            :to="{
-              name: 'ProjectDetails',
-              params: { id: project.projectID },
-            }"
-            ><div class="project-container">
+          <a :href="`${project.projectURL}`">
+            <div class="project-container">
               <div class="title-container">
                 <p id="title-id">
                   {{ project.projectID }}
@@ -30,7 +28,7 @@
                 </p>
               </div>
             </div>
-          </router-link>
+          </a>
         </div>
       </div>
     </div>
@@ -58,19 +56,24 @@ export default {
   .row {
     color: $tertiary-color;
     h1 {
+      text-align: left;
+      color: $secondary-color;
       text-transform: uppercase;
       margin-bottom: 1em;
+      span {
+        color: $tertiary-color;
+      }
     }
     .project-container {
-      height: 40vh;
+      min-height: 45vh;
       padding: 5em;
-      border: 2px solid $text-color;
+      border: 1px dotted $text-color;
       .title-container {
         #title-id {
-          font-size: 2em;
+          font-size: 35px;
         }
         p {
-          font-size: 0.8em;
+          font-size: 14px;
           font-weight: bold;
           color: $text-color;
         }
