@@ -5,7 +5,6 @@
         <div>
           <h1 id="section-title">
             I have done several <span>projects</span> in my career.
-            <span>Open</span> them below.
           </h1>
         </div>
         <div
