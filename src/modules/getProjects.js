@@ -14,18 +14,18 @@ function getProjects(id) {
         },
         {
             projectID: 2,
-            projectTitle: "MVO Island Survival",
+            projectTitle: "VFO",
             projectDescription:
-                "A 3D Multiplayer Island Survival game created in Unity, using simple animations.",
-            projectURL: "https://github.com/KennieA92/MVOIslandSurvival",
-            githubURL: "https://github.com/KennieA92/MVOIslandSurvival",
+                "An exercise app created in Unity, using a simple 2D GUI.",
+            projectURL: "https://github.com/KennieA/VFO",
+            githubURL: "https://github.com/KennieA/VFO",
             projectCategory: "Unity",
         },
         {
             projectID: 3,
             projectTitle: "Trapperholt",
             projectDescription:
-                "A proposed modern design to replace the current website of the danish museum Trapholt",
+                "A proposed modern design to replace the current website of the danish museum Trapholt.",
             projectURL: "https://trapperholt.one/",
             githubURL: "https://github.com/KennieA92/TrapholtProject",
             projectCategory: "Webpage",

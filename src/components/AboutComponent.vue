@@ -4,7 +4,8 @@
       <div class="row">
         <div>
           <h1 id="section-title">
-            My <span>process</span> from meeting to finished product.
+            My <span>process</span> from meeting to
+            <span>finished product</span>.
           </h1>
         </div>
         <div
