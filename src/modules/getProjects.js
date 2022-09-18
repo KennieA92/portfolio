@@ -23,6 +23,15 @@ function getProjects(id) {
         },
         {
             projectID: 3,
+            projectTitle: "TechhubSyd",
+            projectDescription:
+                "A website created in Vue.js, using simple animations and transitions.",
+            projectURL: "https://techhub-exam.web.app//",
+            githubURL: "https://github.com/KennieA92/Techhub-Exam",
+            projectCategory: "Webpage",
+        },
+        {
+            projectID: 4,
             projectTitle: "Trapperholt",
             projectDescription:
                 "A proposed modern design to replace the current website of the danish museum Trapholt.",
@@ -31,7 +40,7 @@ function getProjects(id) {
             projectCategory: "Webpage",
         },
         {
-            projectID: 4,
+            projectID: 5,
             projectTitle: "Esbjerg Bryghus",
             projectDescription:
                 "A commercial video made in premiere pro to the specifications of a local brewery.",
@@ -39,7 +48,7 @@ function getProjects(id) {
             projectCategory: "Video",
         },
         {
-            projectID: 5,
+            projectID: 6,
             projectTitle: "Terminator Parody",
             projectDescription: "A Parady of the movie Terminator. Starring a Terminator.(Me)",
             projectURL: "https://www.youtube.com/watch?v=wtuNJk1whBc",

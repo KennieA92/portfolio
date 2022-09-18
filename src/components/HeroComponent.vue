@@ -11,9 +11,9 @@
 
         <div class="title-container">
           <span id="title-span">
-            <a href="#">Multimedia Designer </a>|
-            <a href="#">Full-Stack Developer </a>|
-            <a href="#">Pizza Enthusiast</a>
+            <a href="#about-section">Multimedia Designer </a>|
+            <a href="#project-section">Full-Stack Developer </a>|
+            <a href="https://pizza-valentino.dk/" target="_blank">Pizza Enthusiast</a>
           </span>
         </div>
       </div>
@@ -29,23 +29,29 @@ export default {};
 #hero-section {
   .introduction-text {
     text-align: left;
+
     h1 {
       color: $secondary-color;
+
       span {
         color: $tertiary-color;
       }
     }
+
     .title-container {
       #title-span {
         color: $secondary-color;
+
         a {
           padding-right: 1rem;
           color: $text-color;
           text-decoration: none;
+
           &:hover {
             color: $tertiary-color;
           }
         }
+
         :not(:first-child) {
           padding-left: 1rem;
         }
